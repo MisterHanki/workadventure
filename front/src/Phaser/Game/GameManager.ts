@@ -22,7 +22,7 @@ export class GameManager {
 
     constructor() {
         this.playerName = localUserStore.getName();
-        this.characterLayers = localUserStore.getCharacterLayers();
+        this.characterLayers = ["male1"];
         this.companion = localUserStore.getCompanion();
     }
 

@@ -1,7 +1,12 @@
-@import "~@fontsource/press-start-2p/index.css";
+// @import "~@fontsource/press-start-2p/index.css";
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("Slack-Light.woff2") format('woff2');
+}
 
 *{
-  font-family: PixelFont-7,monospace;
+  font-family: "Press Start 2P",PixelFont-7,monospace;
 }
 
 .nes-btn {

@@ -33,7 +33,7 @@ class LocalUserStore {
         localStorage.setItem(selectedPlayerKey, ''+playerCharacterIndex);
     }
     getPlayerCharacterIndex(): number {
-        return parseInt(localStorage.getItem(selectedPlayerKey) || '');
+        return parseInt(localStorage.getItem(selectedPlayerKey) || '0');
     }
 
     setCustomCursorPosition(activeRow:number, selectedLayers: number[]): void {
@@ -85,7 +85,7 @@ class LocalUserStore {
         localStorage.setItem(audioPlayerVolumeKey, '' + value);
     }
     getAudioPlayerVolume(): number {
-        return parseFloat(localStorage.getItem(audioPlayerVolumeKey) || '1');
+        return parseFloat(localStorage.getItem(audioPlayerVolumeKey) || '0.5');
     }
 
     setAudioPlayerMuted(value: boolean): void {

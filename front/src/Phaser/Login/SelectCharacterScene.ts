@@ -74,6 +74,8 @@ export class SelectCharacterScene extends AbstractCharacterScene {
         /*create user*/
         this.createCurrentPlayer();
 
+        this.nextSceneToCameraScene();
+
         this.input.keyboard.on('keyup-ENTER', () => {
             return this.nextSceneToCameraScene();
         });
